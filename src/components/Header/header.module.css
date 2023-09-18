@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  z-index: 10000;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.header.sticky {
+  position: fixed;
+  padding-bottom: 60px;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.logo img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.logo h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
+  margin-bottom: 0;
+}
+.menu a:hover {
+  color: var(--primary-color);
+}
+.nav__item {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.nav__item:hover {
+  color: var(--primary-color);
+}
+.nav__icons {
+  display: flex;
+  column-gap: 1.2rem;
+}
+.nav__icons span {
+  cursor: pointer;
+}
+.nav__icons span i {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.nav__icons .profile__actions {
+  position: absolute;
+  top: 7.5%;
+  width: 150px;
+  z-index: 1000;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--primary-color);
+  line-height: 30px;
+  right: 15%;
+  color: #fffe;
+  display: none;
+}
+
+.signin__Sginout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.signin__Sginout a:hover {
+  color: #fffe;
+}
+.show__profile__actions {
+  position: absolute;
+  top: 7.4%;
+  width: 150px;
+  z-index: 1000;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--primary-color);
+  line-height: 30px;
+  right: 15%;
+  color: #fffe;
+}
+.show__profile__actions span {
+  cursor: pointer;
+}
+.nav__icons .profile img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.nav__icons img:active {
+  transform: scale(1.1);
+}
+.nav__active {
+  font-weight: 700;
+}
+.cart__icon,
+.fav__icon {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: 25%;
+  right: -2%;
+  width: 15px;
+  height: 15px;
+  content: "2";
+  background-color: var(--primary-color);
+  color: #fffe;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  z-index: 10;
+}

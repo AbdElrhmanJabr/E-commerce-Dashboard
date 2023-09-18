@@ -1,0 +1,28 @@
+.footer {
+  background: var(--primary-color);
+  padding: 20px;
+  color: white;
+  position: sticky;
+  top: 100%;
+}
+.footer ul li span:nth-child(2) {
+  margin-left: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  column-gap: 8px;
+  color: white;
+}
+.logo p {
+  color: white;
+}
+.footer ul li {
+  background: transparent !important;
+  color: white;
+}
+.footer ul li a:hover {
+  color: white;
+}

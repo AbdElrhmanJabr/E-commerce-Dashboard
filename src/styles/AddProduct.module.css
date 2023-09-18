@@ -1,0 +1,67 @@
+.form__group input {
+  width: 100%;
+  border: 1px solid var(--card-bg-02);
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+.form__group input[type="file"]::file-selector-button {
+  background: var(--primary-color);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 4px 15px;
+  font-weight: 500;
+  color: #fff;
+}
+.form__group input:focus,
+.form__group textarea:focus {
+  outline-color: var(--card-bg-02);
+}
+.form__group select {
+  border: 1px solid var(--card-bg-02);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.form__group {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  color: coral;
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: self-start;
+}
+.form__group span {
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.buy__btn {
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: #fffe;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+.buy__btn.disabled {
+  background: #0c275ac7;
+  cursor: default;
+}
+.buy__btn a.disabled {
+  cursor: default;
+}
+.buy__btn a:hover {
+  color: #fffe;
+}
+.buy__btn:active {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
